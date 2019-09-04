@@ -45,6 +45,9 @@
                                         <state key="normal" title="Celsius">
                                             <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         </state>
+                                        <connections>
+                                            <action selector="convert:" destination="BYZ-38-t0r" eventType="touchUpInside" id="qZt-sU-Ww3"/>
+                                        </connections>
                                     </button>
                                     <button opaque="NO" alpha="0.5" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="right" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wf2-yq-B3R">
                                         <rect key="frame" x="222" y="266" width="120" height="30"/>
@@ -53,6 +56,9 @@
                                         <state key="normal" title="Farenheint">
                                             <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         </state>
+                                        <connections>
+                                            <action selector="convert:" destination="BYZ-38-t0r" eventType="touchUpInside" id="lc1-jH-An6"/>
+                                        </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="D1V-Dv-gJn">
                                         <rect key="frame" x="332" y="54" width="30" height="36"/>
@@ -61,6 +67,9 @@
                                         <state key="normal" title="≫">
                                             <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         </state>
+                                        <connections>
+                                            <action selector="showNext:" destination="BYZ-38-t0r" eventType="touchUpInside" id="qbM-d9-Hb3"/>
+                                        </connections>
                                     </button>
                                 </subviews>
                                 <color key="backgroundColor" red="0.22745098039215686" green="0.52156862745098043" blue="0.87450980392156863" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -83,6 +92,14 @@
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
+                    <connections>
+                        <outlet property="btUnit1" destination="eVG-IH-aNN" id="e5U-qX-InK"/>
+                        <outlet property="btUnit2" destination="wf2-yq-B3R" id="C1Y-Ct-DXP"/>
+                        <outlet property="lbResult" destination="gU9-kn-gud" id="prG-Ru-Qsq"/>
+                        <outlet property="lbResultUnit" destination="OZJ-8H-jl7" id="oF0-d7-pvs"/>
+                        <outlet property="lbUnit" destination="ucr-Ki-ubv" id="f2y-1S-GLv"/>
+                        <outlet property="tfValue" destination="jVx-td-KKc" id="1Y2-jU-If7"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
